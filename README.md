@@ -1,6 +1,6 @@
 # 🔍 AI-Powered Search Engine
 
-Welcome to the AI-Powered Search Engine, an intelligent and dynamic search solution combining advanced **Semantic Search**, **Fuzzy Search**, **Visual Search**, and **LLM-powered Recommendations**. Designed to revolutionize product discovery in e-commerce and knowledge bases, this system helps users effortlessly find the most relevant products or services.
+Welcome to the AI-Powered Search Engine, an intelligent and dynamic search solution combining advanced **Semantic Search** **Visual Search**, and **LLM-powered Recommendations**. Designed to revolutionize product discovery in e-commerce and knowledge bases, this system helps users effortlessly find the most relevant products or services.
 
 ---
 
