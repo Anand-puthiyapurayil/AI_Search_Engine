@@ -1,0 +1,31 @@
+# Use a slim Python 3.12 base image.
+FROM python:3.10-slim
+
+# Install system packages required for building some Python packages.
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libfreetype6-dev \
+    libpng-dev \
+    libjpeg-dev \
+    pkg-config \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set the working directory.
+WORKDIR /app
+
+# Copy the requirements file from the build context.
+COPY requirements.txt .
+
+# Upgrade pip, install PyTorch with GPU support (via the official index), and install other dependencies.
+RUN pip install --upgrade pip && \
+    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124 && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of your application code into the container.
+COPY . .
+
+# Expose the port for your API.
+EXPOSE 8002
+
+# Start the API using Uvicorn.
+CMD ["uvicorn", "api.app:app", "--host", "0.0.0.0", "--port", "8002"]
