@@ -1,0 +1,15 @@
+# Exclude the virtual environment directory
+venv/
+
+# Exclude Git repository files
+.git/
+
+# Exclude large data files (if they're not needed in the image)
+data/
+
+# Exclude Python cache files and compiled bytecode
+__pycache__/
+*.pyc
+
+# Exclude any OS-specific files
+.DS_Store

@@ -1,0 +1,50 @@
+# =========================================
+#  Bi-Encoder (SentenceTransformer) Model
+# =========================================
+base_model: "sentence-transformers/all-MiniLM-L6-v2"   # Base model for embeddings (bi-encoder)
+output_dir: "output/sbert_finetuned"                  # Path to save/load the fine-tuned SentenceTransformer
+output_dir2: "output/sbert2"                          # Another output dir if needed
+
+# =========================================
+#  Cross-Encoder Model
+# =========================================
+base_cross_encoder: "cross-encoder/ms-marco-MiniLM-L-12-v2"  # Base model for cross-encoder
+output_dir_cross_encoder: "output/crossencoder"              # Path to save/load the cross-encoder
+crossencoder: "output/crossencoder"                          # (Optional) same path if needed in other scripts
+
+# =========================================
+#  MLflow & Experiment Settings
+# =========================================
+experiment_name: "Jsearch_SemSearch_Experiment"     # MLflow experiment name
+epochs: 15                                          # Number of epochs for fine-tuning (if applicable)
+batch_size: 32                                      # Batch size for training (if applicable)
+learning_rate: 2e-5                                 # Learning rate for fine-tuning (if applicable)
+
+# Model Registry
+model_registry_name: "jsearch_model"                # Model registry name for the bi-encoder
+cross_encoder_registry_name: "jsearch_cross_encoder_model"  # Model registry name for the cross-encoder
+initial_stage: "staging"                            # Initial stage for model version tagging
+
+# =========================================
+#  Data Paths
+# =========================================
+data_dir: "data/"
+product_data: "data/prod_comp.csv"
+
+# =========================================
+#  FAISS Vector Store Paths
+# =========================================
+product_store_path: "output/product_vector_store"
+
+# =========================================
+#  Text Splitting
+# =========================================
+chunk_size: 1000
+chunk_overlap: 100
+
+# =========================================
+#  Elasticsearch
+# =========================================
+elasticsearch_url: "your elasticsearch url"
+product_index_name: "products"
+
