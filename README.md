@@ -4,6 +4,12 @@ Welcome to the AI-Powered Search Engine, an intelligent and dynamic search solut
 
 ---
 
+## 🚀 Demo
+
+Here's how our AI-powered search engine looks in action:
+
+![AI Search Engine Demo](assets/architecture.jpeg)
+
 ## 🚀 Features
 
 ### 1. **Semantic Search**
