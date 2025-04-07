@@ -8,7 +8,7 @@ Welcome to the AI-Powered Search Engine, an intelligent and dynamic search solut
 
 Here's how our AI-powered search engine looks in action:
 
-![AI Search Engine Demo](assets/searchengine.jpeg)
+![AI Search Engine Demo](assets/searchengine.png)
 
 ## 🚀 Features
 
