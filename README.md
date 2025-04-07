@@ -4,11 +4,11 @@ Welcome to the AI-Powered Search Engine, an intelligent and dynamic search solut
 
 ---
 
-## 🚀 Demo
+ 
 
 Here's how our AI-powered search engine looks in action:
 
-![AI Search Engine Demo](assets/architecture.jpeg)
+![AI Search Engine Demo](assets/searchengine.jpeg)
 
 ## 🚀 Features
 
@@ -69,6 +69,12 @@ Here's how our AI-powered search engine looks in action:
 - **Monitoring & Alerting**: Real-time tracking of model performance and usage with automated alerts for anomalies or performance degradation.[yet to update]
 
 ---
+## 🚀 High Level Architecture 
+
+Here's how our AI-powered search engine looks in action:
+
+![AI Search Engine Demo](assets/architecture.jpeg)
+
 
 ## 🚦 Getting Started
 
